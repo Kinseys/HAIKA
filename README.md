@@ -5,6 +5,11 @@ The pipeline standardizes raw images, learns compact latent “fingerprints” u
 
 This framework was developed in collaboration with biodiversity research teams and is designed for **reproducibility**, **scalability**, and **biological interpretability**.
 
+
+<p align="center">
+  <img src="img/model.png" width="90%">
+</p>
+
 ---
 
 ## ✨ Features
@@ -99,7 +104,7 @@ A convolutional autoencoder compresses each image into a low-dimensional latent 
 These embeddings are clustered and visualized using multiple methods.
 
 <p align="center">
-  <img src="img/model_01.png" width="80%">
+  <img src="img/model_01.png" width="90%">
 </p>
 
 ### 🔑 Hyperparameters
