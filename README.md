@@ -34,7 +34,7 @@ Python **3.9+**
 Install all dependencies:
 
 ```bash
-pip install numpy pandas pillow matplotlib scikit-learn tensorflow opencv-python scikit-image openpyxl tqdm
+pip install -r requirements.txt
 ```
 
 ---
