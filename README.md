@@ -51,7 +51,7 @@ pip install numpy pandas pillow matplotlib scikit-learn tensorflow opencv-python
 
 ---
 
-# Part 1 — Preprocessing (`preprocess.py`)
+# Part 1 — Preprocessing (`preprocessing.py`)
 
 ### 🔧 What it does
 - Scans all subfolders for images  
