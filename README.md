@@ -53,6 +53,11 @@ pip install -r requirements.txt
 
 # Part 1 — Preprocessing (`preprocessing.py`)
 
+<p align="center">
+  <img src="img/preprocessing.png" width="90%">
+</p>
+
+
 ### 🔧 What it does
 - Scans all subfolders for images  
 - Resizes & converts images to PNG  
@@ -88,9 +93,14 @@ python preprocess.py
 ### 🎯 Goal
 Train an autoencoder to extract morphological features, then cluster them to reveal structure in the dataset.
 
+
 ### 🧠 Model Structure
 A convolutional autoencoder compresses each image into a low-dimensional latent vector.  
 These embeddings are clustered and visualized using multiple methods.
+
+<p align="center">
+  <img src="img/model_01.png" width="80%">
+</p>
 
 ### 🔑 Hyperparameters
 
@@ -160,9 +170,19 @@ Contains:
 
 # 👀 Visual Outputs
 
-- **Activation maps** → internal filter responses  
-- **Heatmaps** → important morphological regions  
+- **Activation maps** → internal filter responses
+<p align="center">
+  <img src="img/Condylognatha-Achilidae_01_activations.png" width="80%">
+</p>
+  
+- **Heatmaps** → important morphological regions
+
+<p align="center">
+  <img src="img/heatmap.png" width="80%">
+</p>
+
 - **t-SNE & PCA** → visual grouping of specimens  
+
 
 ---
 
@@ -179,17 +199,15 @@ Contains:
 
 If you use this pipeline in research, please cite:
 
-> (Add your official manuscript reference here once published.)
 
 ---
 
 # 📜 License
 
 MIT License  
-(Or modify to your preferred license)
 
 ---
 
 # 🙋 Contact
 
-For questions, suggestions, or collaborations, please feel free to open an issue or contact the author.
+For questions, suggestions, or collaborations, please feel free to open an issue or contact the author shihan.guan@univ-rennes.fr.
