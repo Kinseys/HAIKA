@@ -241,9 +241,9 @@ SEG_all_new/
  └── cluster_labels_with_pca_tsne.csv
 ```
 <p align="center">
-  <img src="img/segmetns.png" width="90%">
+  <img src="img/segments.png" width="90%">
   <br>
-  <em>Figure. Automatic segmentation and morphological parameter extraction workflow.</em>
+  <em>Figure. Automatic segmentation.</em>
 </p>
 ---
 
@@ -286,7 +286,7 @@ Wing_Outlines_new/
 <p align="center">
   <img src="img/outlines.png" width="90%">
   <br>
-  <em>Figure. Automatic segmentation and morphological parameter extraction workflow.</em>
+  <em>Figure. Automatic segmentation and morphological parameter extraction.</em>
 </p>
 
 
