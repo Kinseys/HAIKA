@@ -201,8 +201,7 @@ Contains:
 
 
 #
----
-<br><br><br><br>
+
 ---
 <br><br><br><br>
 ---
@@ -291,7 +290,60 @@ Wing_Outlines_new/
 
 
 
+---
+<br><br><br><br>
 
+# 🧊 3D Extension (Volumetric Shapes)
+
+The repository includes a minimal, self-contained **3D generalization** demo under **`3d_extensioni/`**.  
+It shows that our representation-learning + clustering pipeline **extends naturally to 3D morphology** by learning latent codes from **synthetic volumetric shapes** (e.g., sphere, cube, ellipsoid, cylinder, torus).
+
+---
+
+### 📂 Folder
+```
+3d_extensioni/
+ ├── main_3d.py          # 3D synthetic shapes + 3D autoencoder + projections (t-SNE/PCA)
+ └── (generated outputs after running)
+```
+
+---
+
+### ▶️ How to run
+From the project root:
+```bash
+python main_3d.py
+```
+
+This will:
+1) **Generate synthetic 3D shapes** (voxel grids)  
+2) **Train a lightweight 3D autoencoder** to learn latent features  
+3) **Project latent codes** with t-SNE/PCA for visualization  
+4) **Save plots** under `outputs_3d_demo/`
+
+Expected outputs:
+```
+outputs_3d_demo/
+ ├── tsne_3d.png   # t-SNE on latent features (colored by shape)
+ └── pca_3d.png    # PCA on latent features (colored by shape)
+```
+
+---
+
+### 📝 What this demonstrates
+- The same **autoencoder-based feature learning** strategy works on **3D volumes**.  
+- Shape classes form **separable clusters** in the learned latent space (see t-SNE/PCA).  
+- This provides a simple proof-of-concept that our 2D pipeline **generalizes to 3D morphology**.
+
+---
+
+### 📷 (Optional) Add a figure in README
+<p align="center">
+  <img src="outputs_3d_demo/tsne_3d.png" width="45%">
+  <img src="outputs_3d_demo/pca_3d.png"  width="45%">
+  <br>
+  <em>3D latent projections: t-SNE (left) and PCA (right).</em>
+</p>
 
 
 
