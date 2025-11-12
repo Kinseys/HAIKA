@@ -198,6 +198,108 @@ Contains:
 - OPTICS returns many `-1` → try KMeans/Agglomerative  
 - Windows path issues → use double `\\` (e.g., `D:\\data\\images`)  
 
+
+
+#
+---
+
+---
+
+---
+
+# Wing Segmentation and Morphological Analysis
+
+The segmentation folder contains two core scripts that perform **automatic insect wing segmentation** and **biomechanical property estimation**.
+
+---
+
+## `seg_main.py`
+
+This script performs **wing segmentation using the Segment Anything Model (SAM)**.  
+It automatically generates masks for each input image and extracts feature embeddings for further analysis.
+
+**Main steps:**
+1. Load and preprocess all insect wing images.  
+2. Use the Meta AI **Segment Anything (ViT-B)** model to detect and segment individual wing regions.  
+3. Save all mask files for each specimen in a dedicated subfolder (`*_masks/`).  
+4. Compute embeddings for each segmented region using a pretrained **MobileNetV2** feature extractor.  
+5. Visualize species clustering using **PCA** and **t-SNE** projections.
+
+**Output examples:**
+- Segmentation masks (per image)  
+- Extracted feature CSV files  
+- Clustering visualizations (`PCA`, `t-SNE`, `dendrograms`)  
+
+📁 **Example output structure:**
+```
+SEG_all_new/
+ ├── image1_masks/
+ │   ├── image1_mask_0.png
+ │   ├── image1_mask_1.png
+ │   └── ...
+ ├── extracted_features.csv
+ └── cluster_labels_with_pca_tsne.csv
+```
+<p align="center">
+  <img src="img/segmetns.png" width="90%">
+  <br>
+  <em>Figure. Automatic segmentation and morphological parameter extraction workflow.</em>
+</p>
+---
+
+### `outline_extract_and_calculate.py`
+
+This script post-processes the SAM-generated masks to **extract wing outlines** and **compute morphological flight metrics**.
+
+**Main functions:**
+1. Combine individual mask regions for each specimen.  
+2. Extract the **largest contour** representing the full wing area.  
+3. Compute key aerodynamic parameters:  
+   - **Wing span (b)**  
+   - **Wing area (S)**  
+   - **Average chord (c = S/b)**  
+   - **Aspect ratio (AR = b²/S)**  
+4. Estimate **body volumes and flight efficiency** based on wing span scaling laws.  
+5. Save all wing outline images and parameter reports (`TXT`, `Excel`).
+
+**Output examples:**
+- Outlined wing images (black on white background)  
+- `wing_body_parameters.xlsx` — including span, area, aspect ratio, and flight efficiency  
+- `wing_body_parameters.txt` — detailed per-image summaries  
+
+📁 **Example output structure:**
+```
+Wing_Outlines_new/
+ ├── image1_combined_outline.png
+ ├── wing_body_parameters.xlsx
+ └── wing_body_parameters.txt
+```
+
+---
+
+### 🧭 Workflow Summary
+
+1. Run `seg_main.py` → performs segmentation and feature extraction.  
+2. Run `outline_extract_and_calculate.py` → extracts outlines and computes morphological/flight traits.  
+
+📷 **Example illustration:**
+<p align="center">
+  <img src="img/outlines.png" width="90%">
+  <br>
+  <em>Figure. Automatic segmentation and morphological parameter extraction workflow.</em>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 
 # 📄 Citation
