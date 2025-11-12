@@ -339,8 +339,8 @@ outputs_3d_demo/
 
 ### 📷 (Optional) Add a figure in README
 <p align="center">
-  <img src="outputs_3d_demo/tsne_3d.png" width="45%">
-  <img src="outputs_3d_demo/pca_3d.png"  width="45%">
+  <img src="img/tsne_3d.png" width="45%">
+  <img src="img/pca_3d.png"  width="45%">
   <br>
   <em>3D latent projections: t-SNE (left) and PCA (right).</em>
 </p>
