@@ -297,21 +297,39 @@ Wing_Outlines_new/
 The repository includes a minimal, self-contained **3D generalization** demo under **`3d_extensioni/`**.  
 It shows that our representation-learning + clustering pipeline **extends naturally to 3D morphology and primates 3d data** by learning latent codes from **synthetic volumetric shapes** (e.g., sphere, cube, ellipsoid, cylinder, torus; and cuneiform, femur, mandible, patella, scapula, vertebra for primates).
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="3d_expansion/primates/cuneiform.png" width="200px"><br>
+      <b>Cuneiform</b>
+    </td>
+    <td align="center">
+      <img src="3d_expansion/primates/femur.png" width="200px"><br>
+      <b>Femur</b>
+    </td>
+    <td align="center">
+      <img src="3d_expansion/primates/mandible.png" width="200px"><br>
+      <b>Mandible</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="3d_expansion/primates/vertebra.png" width="200px"><br>
+      <b>Vertebra</b>
+    </td>
+    <td align="center">
+      <img src="3d_expansion/primates/patella.png" width="200px"><br>
+      <b>Patella</b>
+    </td>
+    <td align="center">
+      <img src="3d_expansion/primates/scapula.png" width="200px"><br>
+      <b>Scapula</b>
+    </td>
+  </tr>
+</table>
 <p align="center">
-  <img src="3d_expansion/primates/cuneiform.png" width="33%">
-  <img src="3d_expansion/primates/femur.png"  width="33%">
-  <img src="3d_expansion/primates/mandible.png"  width="33%">
-  <br>
   <em>3D primates datasets examples.</em>
 </p>
-<p align="center">
-  <img src="3d_expansion/primates/vertebra.png"  width="33%">
-  <img src="3d_expansion/primates/patella.png" width="33%">
-  <img src="3d_expansion/primates/scapula.png"  width="33%">
-  <br>
-  <em>3D primates datasets examples.</em>
-</p>
-
 ---
 
 ### 📂 Folder
