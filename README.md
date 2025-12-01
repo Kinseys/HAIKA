@@ -1,4 +1,4 @@
-# Autoencoder Pipeline for Insect Morphology Analysis
+# Autoencoder Pipeline for Morphology Analysis
 <p align="justify">
 This repository provides a complete workflow for <strong>image preprocessing</strong>, <strong>deep feature extraction</strong>, and <strong>unsupervised clustering</strong> for insect morphology studies by using the wings images. The pipeline standardizes raw images, learns compact latent “fingerprints” using a convolutional autoencoder, and then groups similar specimens through clustering methods such as OPTICS, KMeans, and Agglomerative clustering.
 </p>
