@@ -292,10 +292,25 @@ Wing_Outlines_new/
 ---
 <br><br><br><br>
 
-# 🧊 3D Extension (Volumetric Shapes)
+# 🧊 3D Extension (Volumetric Shapes and primates dataset)
 
 The repository includes a minimal, self-contained **3D generalization** demo under **`3d_extensioni/`**.  
-It shows that our representation-learning + clustering pipeline **extends naturally to 3D morphology** by learning latent codes from **synthetic volumetric shapes** (e.g., sphere, cube, ellipsoid, cylinder, torus).
+It shows that our representation-learning + clustering pipeline **extends naturally to 3D morphology and primates 3d data** by learning latent codes from **synthetic volumetric shapes** (e.g., sphere, cube, ellipsoid, cylinder, torus; and cuneiform, femur, mandible, patella, scapula, vertebra for primates).
+
+<p align="center">
+  <img src="3d_expansion/primates/cuneiform.png" width="33%">
+  <img src="3d_expansion/primates/femur.png"  width="33%">
+  <img src="3d_expansion/primates/mandible.png"  width="33%">
+  <br>
+  <em>3D primates datasets examples.</em>
+</p>
+<p align="center">
+  <img src="3d_expansion/primates/vertebra.png"  width="33%">
+  <img src="3d_expansion/primates/patella.png" width="33%">
+  <img src="3d_expansion/primates/scapula.png"  width="33%">
+  <br>
+  <em>3D primates datasets examples.</em>
+</p>
 
 ---
 
@@ -303,6 +318,7 @@ It shows that our representation-learning + clustering pipeline **extends natura
 ```
 3d_extensioni/
  ├── main_3d.py          # 3D synthetic shapes + 3D autoencoder + projections (t-SNE/PCA)
+ ├── primates/           # basic results for primates
  └── (generated outputs after running)
 ```
 
@@ -336,7 +352,7 @@ outputs_3d_demo/
 
 ---
 
-### 📷 (Optional) Add a figure in README
+### 📷 visualization results for volume data
 <p align="center">
   <img src="img/tsne_3d.png" width="45%">
   <img src="img/pca_3d.png"  width="45%">
@@ -344,7 +360,13 @@ outputs_3d_demo/
   <em>3D latent projections: t-SNE (left) and PCA (right).</em>
 </p>
 
-
+### 📷 visualization results for primates data
+<p align="center">
+  <img src="3d_expansion/primates/tsne.png" width="45%">
+  <img src="3d_expansion/primates/pca.png"  width="45%">
+  <br>
+  <em>3D latent projections: t-SNE (left) and PCA (right).</em>
+</p>
 
 
 
