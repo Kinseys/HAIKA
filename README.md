@@ -1,8 +1,8 @@
 # Autoencoder Pipeline for Insect Morphology Analysis
-
-This repository provides a complete workflow for **image preprocessing**, **deep feature extraction**, and **unsupervised clustering** for insect morphology studies by using the wings images. The pipeline standardizes raw images, learns compact latent “fingerprints” using a convolutional autoencoder, and then groups similar specimens through clustering methods such as OPTICS, KMeans, and Agglomerative clustering.
-
-This framework was developed in collaboration with Muséum national d'Histoire naturelle (MNHN) teams, University of Oxford and INSERM. It's designed for **reproducibility**, **scalability**, and **biological interpretability**.
+<p align="justify">
+This repository provides a complete workflow for <strong>image preprocessing</strong>, <strong>deep feature extraction</strong>, and <strong>unsupervised clustering</strong> for insect morphology studies by using the wings images. The pipeline standardizes raw images, learns compact latent “fingerprints” using a convolutional autoencoder, and then groups similar specimens through clustering methods such as OPTICS, KMeans, and Agglomerative clustering.
+</p>
+This framework was developed in collaboration with Muséum national d'Histoire naturelle (MNHN) teams, University of Oxford and INSERM. It's designed for <strong>reproducibility</strong>, <strong>scalability</strong>, and <strong>biological interpretability</strong>.
 
 
 <p align="center">
@@ -293,10 +293,10 @@ Wing_Outlines_new/
 <br><br><br><br>
 
 # 🧊 3D Extension (Volumetric Shapes and primates dataset)
-
-The repository includes a minimal, self-contained **3D generalization** demo under **`3d_extensioni/`**.  
-It shows that our representation-learning + clustering pipeline **extends naturally to 3D morphology and primates 3d data** by learning latent codes from **synthetic volumetric shapes** (e.g., sphere, cube, ellipsoid, cylinder, torus; and cuneiform, femur, mandible, patella, scapula, vertebra for primates).
-
+<p align="justify">
+The repository includes a minimal, self-contained <strong>3D generalization</strong> demo under <strong>`3d_expansion`</strong>.  
+It shows that our representation-learning + clustering pipeline <strong>extends naturally to 3D morphology and primates 3d data </strong> by learning latent codes from <strong>synthetic volumetric shapes</strong> (e.g., sphere, cube, ellipsoid, cylinder, torus; and cuneiform, femur, mandible, patella, scapula, vertebra for primates).
+</p>
 <table align="center">
   <tr>
     <td align="center">
@@ -328,7 +328,7 @@ It shows that our representation-learning + clustering pipeline **extends natura
   </tr>
 </table>
 <p align="center">
-  <em>3D primates datasets examples.</em>
+  <em>3D primates datasets examples. The raw volume data were downloaded from MorphoSource (ID: 000656244; Almécija et al. 2024).</em>
 </p>
 ---
 
@@ -397,6 +397,9 @@ outputs_3d_demo/
 
 If you use this pipeline in research, please cite:
 
+---
+# 📄 References
+Almécija, S., Pugh, K. D., Anaya, A., Smith, C. M., Simmons, N. B., Voss, R. S., ... & Catalano, S. A. (2024). Primate Phenotypes: A Multi-Institution Collection of 3D Morphological Data Housed in MorphoSource. Scientific Data, 11(1), 1391.
 
 ---
 
